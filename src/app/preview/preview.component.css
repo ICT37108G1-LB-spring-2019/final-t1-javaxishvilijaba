@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color: gray;
+    margin: 10px 45%;
+    font-size: 35px;
+    border: solid gray 1px;
+    border-radius: 5%;
+}

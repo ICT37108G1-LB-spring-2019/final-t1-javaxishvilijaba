@@ -1,0 +1,24 @@
+<form [formGroup]="itemForm" (ngSubmit)="onSubmit(itemForm.value)">
+    <div>
+        <label> title </label>
+        <input type="text" formControlName="title">
+    </div>
+    <div>
+        <label> url </label>
+        <input type="text" formControlName="url">
+    </div>
+    <button class="button" type="submit">დამატება</button>
+</form>
+
+
+<div>
+  <ul class="list">
+    <li class="gallery-item" *ngFor="let item of items index as id" >
+      <h3>{{item.title}}</h3>
+
+      <img [routerLink]="[ '/preview', id ]" src={{item.url}} alt="wrong image url">
+
+      <button class="button danger" (click)="removeItem(item)">წაშლა</button>
+    </li>
+  </ul>
+</div>

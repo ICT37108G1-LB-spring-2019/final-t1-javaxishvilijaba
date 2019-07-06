@@ -1,0 +1,33 @@
+div{
+    background-color: #1976d2;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2%;
+    margin-bottom: 20px;
+}
+div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+div ul li{
+    margin-right: 50px;
+    padding: 10px;
+    background-color: #095eb3;
+    border: 1px #095eb3 solid;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+div ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 45px;
+    /* height: 50px; */
+}
